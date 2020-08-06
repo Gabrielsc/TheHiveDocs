@@ -401,6 +401,8 @@ _EOF_
 To use Cassandra database, TheHive configuration file (`/etc/thehive/application.conf`) has to be edited and updated with following lines:
 
 ```yaml
+include "/etc/thehive/secret.conf" 
+
 db {
   provider: janusgraph
   janusgraph {
